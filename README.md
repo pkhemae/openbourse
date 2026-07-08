@@ -4,6 +4,7 @@
 
 ```
 apps/
+  waitlist/ # Waitlist app (TanStack Start)
   web/      # Web app (TanStack Start)
 packages/
   ui/       # Design system (shadcn/ui + Base UI + Tailwind CSS)
@@ -20,6 +21,7 @@ cd apps/web && npx shadcn@latest add <component>
 ```sh
 pnpm install                     # Install dependencies
 pnpm nx dev @openbourse/web      # Start the web app dev server (http://localhost:3000)
+pnpm nx dev @openbourse/waitlist # Start the waitlist dev server (http://localhost:3001)
 pnpm nx build @openbourse/web    # Build the web app for production
 pnpm nx start @openbourse/web    # Serve the production build
 pnpm nx graph                    # Visualize the project graph
