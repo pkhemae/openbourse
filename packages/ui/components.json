@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-nova",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@openbourse/ui/components",
+    "utils": "@openbourse/ui/lib/utils",
+    "hooks": "@openbourse/ui/hooks",
+    "lib": "@openbourse/ui/lib",
+    "ui": "@openbourse/ui/components"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "rtl": false
+}

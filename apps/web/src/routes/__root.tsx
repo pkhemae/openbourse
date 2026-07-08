@@ -5,6 +5,7 @@ import {
   Scripts,
 } from '@tanstack/react-router';
 import type { ReactNode } from 'react';
+import appCss from '@openbourse/ui/globals.css?url';
 
 export const Route = createRootRoute({
   head: () => ({
@@ -18,6 +19,12 @@ export const Route = createRootRoute({
       },
       {
         title: 'OpenBourse',
+      },
+    ],
+    links: [
+      {
+        rel: 'stylesheet',
+        href: appCss,
       },
     ],
   }),

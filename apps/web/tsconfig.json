@@ -9,5 +9,10 @@
     "outDir": "out-tsc",
     "rootDir": "src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../../packages/ui"
+    }
+  ]
 }

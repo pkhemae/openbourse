@@ -5,7 +5,14 @@
 ```
 apps/
   web/      # Web app (TanStack Start)
-packages/   # Shared libraries
+packages/
+  ui/       # Design system (shadcn/ui + Base UI + Tailwind CSS)
+```
+
+Add a UI component (from `apps/web`, installs into `packages/ui`):
+
+```sh
+cd apps/web && npx shadcn@latest add <component>
 ```
 
 ## Development
