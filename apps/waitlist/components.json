@@ -11,9 +11,9 @@
   },
   "iconLibrary": "lucide",
   "aliases": {
-    "components": "#components",
-    "hooks": "#hooks",
-    "lib": "#lib",
+    "components": "#/components",
+    "hooks": "#/hooks",
+    "lib": "#/lib",
     "utils": "@openbourse/ui/lib/utils",
     "ui": "@openbourse/ui/components"
   },

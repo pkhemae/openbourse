@@ -9,9 +9,7 @@
     "start": "srvx --prod -s dist/client dist/server/server.js"
   },
   "imports": {
-    "#components/*": "./src/components/*.tsx",
-    "#lib/*": "./src/lib/*.ts",
-    "#hooks/*": "./src/hooks/*.ts"
+    "#/*": "./src/*"
   },
   "dependencies": {
     "@openbourse/ui": "workspace:*",
