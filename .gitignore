@@ -4,6 +4,7 @@
 dist
 tmp
 out-tsc
+*.tsbuildinfo
 
 # dependencies
 node_modules
@@ -18,11 +19,7 @@ node_modules
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode/
 
 # misc
 /.sass-cache
@@ -40,6 +37,9 @@ Thumbs.db
 
 .nx/cache
 .nx/workspace-data
+
+# TanStack Start
+.tanstack
 
 # environment variables
 .env

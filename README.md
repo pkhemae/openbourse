@@ -1,32 +1,27 @@
 # OpenBourse
 
-Plateforme open-source d'information financière et boursière — une alternative libre à Zonebourse.
-
-## Stack
-
-- Monorepo [Nx](https://nx.dev) avec workspaces [pnpm](https://pnpm.io) et TypeScript project references
-- App web : [TanStack Start](https://tanstack.com/start) (à venir, dans `apps/`)
-
 ## Structure
 
 ```
-apps/       # Applications (web, etc.)
-packages/   # Librairies partagées
+apps/
+  web/      # Web app (TanStack Start)
+packages/   # Shared libraries
 ```
 
-## Développement
+## Development
 
 ```sh
-pnpm install                     # Installer les dépendances
-pnpm nx graph                    # Visualiser le graphe des projets
-pnpm nx typecheck <projet>       # Typecheck d'un projet
-pnpm nx build <projet>           # Build d'un projet
-pnpm nx run-many -t typecheck    # Typecheck de tous les projets
-pnpm nx sync                     # Synchroniser les TypeScript project references
+pnpm install                     # Install dependencies
+pnpm nx dev @openbourse/web      # Start the web app dev server (http://localhost:3000)
+pnpm nx build @openbourse/web    # Build the web app for production
+pnpm nx start @openbourse/web    # Serve the production build
+pnpm nx graph                    # Visualize the project graph
+pnpm nx run-many -t typecheck    # Typecheck all projects
+pnpm nx sync                     # Sync TypeScript project references
 ```
 
-Générer une librairie partagée :
+Generate a shared library:
 
 ```sh
-pnpm nx g @nx/js:lib packages/<nom> --importPath=@openbourse/<nom>
+pnpm nx g @nx/js:lib packages/<name> --importPath=@openbourse/<name>
 ```
